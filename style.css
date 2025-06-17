@@ -1,46 +1,145 @@
-
-body {
-    background-image: url(./imagenes/wp11976242-el-ultimo-tour-del-mundo-wallpapers.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.body1 {
+  background-image: url(./imagenes/wp11976242-el-ultimo-tour-del-mundo-wallpapers.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-h1{
-    text-align: center;
-    font-size: 70px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:  rgb(3, 3, 3);
+.body2 {
+  background-color: rgba(66, 38, 26, 0.5);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  background-color: rgba(66, 38, 26, 0.5);
+  backdrop-filter: blur(2px);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 4vh;
+  color: rgb(3, 3, 3);
+  margin: 0;
+}
+
+header section a {
+  margin-left: 10px;
+}
+
+.panelHamburguesa {
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: -500px;
+  background-color: rgba(66, 38, 26, 0.8);
+  backdrop-filter: blur(3px);
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  z-index: 1000;
+}
+
+#panelHamburguesa:target {
+  left: 0;
+}
+
+
+#panelHamburguesa:target ~ header section #abrir {
+  display: none;
+}
+
+#panelHamburguesa:target ~ header section #cerrar {
+  display: inline-block;
+}
+#cerrar {
+  display: none;
+}
+
+.Bad {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+/* Sección principal */
 .canciones {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 40px;
-    max-width: 1400px;
-    margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .imagen1 {
-    width: 500px;
-    height: auto;
-    border-radius: 20px;
-    flex-shrink: 0;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  flex-shrink: 0;
 }
 
 li {
-    display: inline-block;
-    list-style: none;
-    padding: 8px;
-    margin: 5px;
-    font-size: 30px;
-    color : rgb(238, 238, 238);
+  display: inline-block;
+  list-style: none;
+  padding: 8px;
+  margin: 5px;
+  font-size: 30px;
+  color: rgb(238, 238, 238);
 }
-.caja{
-    background-color: rgba(66, 38, 26, 0.5);
-    padding: 0px 0px 0px 0px;
-    padding-bottom: 110px;
-    border-radius: 20px;
-    max-width: 700px;
-    backdrop-filter: blur(2px);
+
+.caja {
+  background-color: rgba(66, 38, 26, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  backdrop-filter: blur(2px);
+}
+audio {
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgba(66, 38, 26, 0.6);
+  border-radius: 10px;
+  filter: brightness(0.95) contrast(1.2);
+}
+.imgTextoIzquierda {
+    float: left;
+    width: 450px;
+    margin: 0 15px 15px 0;
+    border-radius: 8px;
+}
+
+.imgTextoDerecha {
+    float: right;
+    width: 450px;
+    margin: 0 0 15px 15px;
+    border-radius: 8px;
+}
+
+p::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+p{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
 }

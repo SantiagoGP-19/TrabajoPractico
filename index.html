@@ -1,18 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EL ÚLTIMO TOUR DEL MUNDO</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body1">
+
+    <section id="panelHamburguesa" class="panelHamburguesa">
+        <a href="Artista.html" class="Bad">Sobre El Artista</a>
+        <a href="Album.html" class="Bad">Sobre el Álbum</a>
+        <a href="#" class="Bad">Álbum</a>
+    </section>
+
     <header>
-        <h1>EL ÚLTIMO TOUR DEL MUNDO</h1>
+        <h1>
+            EL ÚLTIMO TOUR DEL MUNDO
+        </h1>
+    <section>
+        <a href="#panelHamburguesa" id="abrir">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000000">
+        <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+        </svg>
+        </a>
+        <a href="#" id="cerrar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#000000">
+            <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+        </svg>
+        </a>
+    </section>
     </header>
-    <section class ="canciones">
-        <img class="imagen1" src="./Imagenes/wp11976239-el-ultimo-tour-del-mundo-wallpapers.jpg" alt="">
-        <article class= caja>
+
+    <section class="canciones">
+            <img class="imagen1" src="./Imagenes/wp11976239-el-ultimo-tour-del-mundo-wallpapers.jpg" alt="Portada del álbum">
+        <article class="caja">
             <ul>
                 <li>El mundo es mío</li>
                 <li>Te mudaste</li>
@@ -31,7 +53,11 @@
                 <li>Antes que se acabe</li>
                 <li>Cantares de Navidad</li>
             </ul>
+            <audio controls>
+                <source src="./musica/booker-t.mp3" type="audio/mpeg">
+            </audio>
         </article>
     </section>
+
 </body>
 </html>
