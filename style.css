@@ -1,3 +1,4 @@
+
 .body1 {
   background-image: url(./imagenes/wp11976242-el-ultimo-tour-del-mundo-wallpapers.jpg);
   background-size: cover;
@@ -6,6 +7,7 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .body2 {
   background-color: rgba(66, 38, 26, 0.5);
   background-size: cover;
@@ -73,7 +75,6 @@ header section a {
   margin: 15px 0;
 }
 
-/* Sección principal */
 .canciones {
   display: flex;
   align-items: flex-start;
@@ -93,19 +94,23 @@ header section a {
 li {
   display: inline-block;
   list-style: none;
-  padding: 8px;
-  margin: 5px;
-  font-size: 30px;
+  margin-left: 10px;
   color: rgb(238, 238, 238);
 }
-
+ul{
+  margin-top: 60px;
+}
 .caja {
   background-color: rgba(66, 38, 26, 0.5);
-  padding: 30px;
+  width: 710px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
-  max-width: 700px;
   backdrop-filter: blur(2px);
 }
+
 audio {
   width: 100%;
   margin-top: 10px;
@@ -122,24 +127,34 @@ audio {
 
 .imgTextoDerecha {
     float: right;
-    width: 450px;
+    width: 350px;
     margin: 0 0 15px 15px;
     border-radius: 8px;
 }
+
 
 p::after {
     content: "";
     display: block;
     clear: both;
 }
+
 p{
-    font-size: 30px;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+  font-size: 30px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  line-height: 1.5;
+}
+footer{
+  bottom: 0;
+  position: absolute;
+  width: 1920px;
+  height: 10vh;
+  background-color: rgba(66, 38, 26, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
 }
